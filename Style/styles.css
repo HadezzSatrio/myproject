@@ -96,6 +96,10 @@ span {
   line-height: 1.3;
 }
 
+.home-content {
+  order: 2;
+}
+
 .home-img img {
   height: 20;
   width: 25vw;
@@ -226,6 +230,7 @@ span {
   font-size: 4.5rem;
 }
 
+/* footer */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -274,8 +279,16 @@ span {
     padding: 10rem 3%;
   }
 
+  services {
+    padding: 7rem;
+  }
+
   .portfolio {
     padding-bottom: 7rem;
+  }
+
+  .contact {
+    min-height: auto;
   }
 
   .footer {
@@ -286,6 +299,28 @@ span {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
   }
 
   .home {
